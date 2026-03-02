@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { doSingOut } from '@/firebase/auth';
 import { cn } from '@/lib/utils';
 import { TYPOGRAPHY } from '@/constants/typography';
@@ -12,6 +13,7 @@ import { ChangePasswordModal } from './components/ChangePasswordModal';
 import { DeleteAccountModal } from './components/DeleteAccountModal';
 
 export const ProfilePage = () => {
+  const { t } = useTranslation();
   const [isPasswordModalOpen, setIsPasswordModalOpen] = useState(false);
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
   const navigate = useNavigate();
@@ -44,7 +46,7 @@ export const ProfilePage = () => {
         <div className="mx-auto max-w-[1136px] px-4 md:px-6 py-8 md:py-12">
           <div className="mb-8">
             <h1 className={cn(TYPOGRAPHY.h2, 'text-foreground')}>
-              Особистий кабінет
+              {t('login.personalCabinet')}
             </h1>
             <p className="text-muted-foreground mt-1 text-sm">
               {currentUser?.email}
