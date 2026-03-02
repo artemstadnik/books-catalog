@@ -145,6 +145,7 @@ export const SearchSections = ({
                       src={book.images[0]}
                       className="w-full h-full object-cover"
                       alt={book.name}
+                      loading="lazy"
                     />
                   : <BookOpen
                       size={20}

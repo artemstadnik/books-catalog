@@ -111,7 +111,8 @@ body #root {
   --sidebar-foreground: #f5e8d4;
   --sidebar-primary: #d4a96a;
   --sidebar-primary-foreground: #1e0f06;
-  --sidebar-accent: #f2e4ce --sidebar-accent-foreground: #f5e8d4;
+  --sidebar-accent: #f2e4ce;
+  --sidebar-accent-foreground: #f5e8d4;
   --sidebar-border: rgba(255 255 255 / 0.09);
   --sidebar-ring: #d4a96a;
 }

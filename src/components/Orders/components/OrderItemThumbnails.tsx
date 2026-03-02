@@ -18,6 +18,7 @@ export const OrderItemThumbnails = ({ items }: OrderItemThumbnailsProps) => {
           key={item.id}
           src={item.images[0]}
           alt={item.name}
+          loading="lazy"
           className="w-10 h-14 object-cover rounded-sm border-2 border-background"
           style={{ zIndex: 10 - index }}
         />

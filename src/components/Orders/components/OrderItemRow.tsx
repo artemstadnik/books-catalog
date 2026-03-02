@@ -22,6 +22,7 @@ export const OrderItemRow = ({ item, currency, rate }: OrderItemRowProps) => {
       <img
         src={item.images[0]}
         alt={item.name}
+        loading="lazy"
         className="w-12 h-16 object-cover rounded-sm flex-shrink-0"
         onError={handleImageError}
       />

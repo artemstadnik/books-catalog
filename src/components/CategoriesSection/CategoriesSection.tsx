@@ -127,6 +127,7 @@ export const CategoriesSection = () => {
                 src={cat.image}
                 alt={t(cat.label)}
                 draggable={false}
+                loading="lazy"
                 className="overflow-hidden sm:w-[290px]  object-cover transition duration-500 group-hover:scale-105"
               />
             </div>

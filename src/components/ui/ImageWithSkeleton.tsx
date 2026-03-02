@@ -32,6 +32,7 @@ export const ImageWithSkeleton: React.FC<Props> = ({
         />
       )}
       <img
+        loading="lazy"
         {...imgProps}
         className={className}
         onLoad={handleLoad}

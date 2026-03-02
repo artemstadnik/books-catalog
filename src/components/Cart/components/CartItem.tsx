@@ -60,6 +60,7 @@ export const CartItem = ({ book }: CartItemProps) => {
           <img
             src={book.images[0]}
             alt={book.name}
+            loading="lazy"
             className="h-full object-contain"
           />
           <div className="min-w-0">

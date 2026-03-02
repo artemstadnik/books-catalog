@@ -43,6 +43,7 @@ export const TeamMemberCard = ({
       <img
         src={member.photo}
         alt={member.name}
+        loading="lazy"
         className={cn(
           'absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500',
           isActive ? 'scale-110 blur-sm opacity-60' : 'scale-100 opacity-100',
