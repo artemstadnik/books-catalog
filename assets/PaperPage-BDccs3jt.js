@@ -1,1 +1,0 @@
-import{u as t,j as o,L as e}from"./index-Dyd3TlEA.js";import{C as p}from"./Catalog-C1P7g-Hg.js";import{u as i}from"./useSortBooks-BeIUdCJp.js";const u=()=>{const{t:s}=t(),{data:a=[],isLoading:r}=i("paperback");return o.jsx(e,{isLoading:r,children:o.jsx(p,{products:a,title:s("categories.paper")})})};export{u as PaperPage};
